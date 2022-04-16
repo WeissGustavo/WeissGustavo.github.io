@@ -1,7 +1,6 @@
 body{
     background-color: #23bbae00;
     font-family: 'Source Sans Pro', sans-serif;
-    overflow-x: hidden;
 }
 
 p{
@@ -12,30 +11,30 @@ a{
     color: #21b635;
 }
 
+#wrapper{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#wrapper *{
+    box-sizing: content-box;
+}
+
+/*-------------------------------------LANDING-----------------------------------------*/
+
 #landing-container{
     position: relative;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     overflow: hidden;
-}
-
-#about-container{
-    background-color: white;
-    border-radius: 25px 25px 25px 25px;
-    width: 75%;
-    box-shadow: -2px 2px rgba(170, 170, 170, 0.548), 1px -1px rgba(170, 170, 170, 0.438);
-}
-
-#carousel-container{
-    height: 1.6em;
 }
 
 #landing-text{
     position: absolute;
     color: #fff;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -35%);
     z-index: 1;
 }
@@ -45,6 +44,46 @@ a{
     object-fit: fill;
     z-index: 0;
 }
+/*--------------------------------------------ABOUT---------------------------------------*/
+
+#about{
+    padding-bottom: 5%;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------SKILLS---------------------------------------*/
+
+#skills-box{
+    margin-top: 20vh;
+}
+
+#skills-container{
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    width: 75%;
+    box-shadow: -2px 2px rgba(170, 170, 170, 0.548), 1px -1px rgba(170, 170, 170, 0.438);
+    padding-bottom: 5%;
+}
+
+#box-content{
+    position: relative;
+    top:-100px;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+#carousel-container{
+    height: 1.6em;
+}
+
+#contact-call{
+    padding:0%;
+}
+
+#text-whatsapp{
+    padding-left: 7.5%;
+}
+
 
 #bg-gradient{
     position: fixed;
@@ -69,18 +108,14 @@ a{
     background-color: #fff;
 }
 
-#box-content{
-    position: relative;
-    top:-350px;
-}
 
 #project-box{
     position: relative;
-    top: -260px;
+    top: -60px;
 }
 
 #project-wrapper{
-    height: 400px;
+    height: 520px;
 }
 
 .text-main{
@@ -107,4 +142,119 @@ a{
 .container-fluid{
     padding: 0%;
     display: flex;
+}
+
+.h4{
+    font-size: calc(0.7rem + .3vw)
+}
+
+h1{
+   font-size: calc(1rem + .3vw); 
+}
+
+h5{
+    font-size: calc(0.75rem + .3vw);
+}
+
+h6{
+    font-size: 0.78rem;
+}
+
+p{
+    font-size: small;
+}
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+    
+    #text-whatsapp{
+        padding-left: 1.5%;
+    }
+
+    .h1,h1{
+        font-size: calc(1.175rem + 1.5vw);
+    }
+
+    .h4,h4{
+        font-size: calc(1rem + .3vw);
+    }
+
+    .h5,h5{
+        font-size: calc(0.8rem + .3vw);
+    }
+    h6{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    #text-whatsapp{
+        padding-left: 4.5%;
+    }
+
+    .h1,h1{
+        font-size: calc(1.375rem + 1.5vw);
+    }
+
+    .h4,h4{
+        font-size: calc(1.275rem + .3vw);
+    }
+
+    .h5,h5{
+        font-size: calc(0.8rem + .3vw);
+    }
+
+    h6{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 1200px) {
+    #skills-box{
+        margin-top: 25%;
+    }
+    
+    #box-content{
+        position: relative;
+        top:-350px;
+    }
+    
+    #project-box{
+        position: relative;
+        top: -260px;
+    }
+    
+    #project-wrapper{
+        height: 400px;
+    }
+    
+    .text-main{
+        color: #21b635;
+    }
+    
+    .border-main{
+        border-color: #21b635;
+    }
+    
+    #text-whatsapp{
+        padding-left: 7.5%;
+    }
+
+    .h1,h1{
+        font-size: 2.5rem;
+    }
+
+    .h4,h4{
+        font-size: 1.5rem;
+    }
+
+    .h5,h5{
+        font-size: 1.25rem;
+    }
+    
+    h6{
+        font-size: 1rem;
+    }
 }
